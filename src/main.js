@@ -40,7 +40,7 @@ form.addEventListener('submit', event => {
     })
     .catch(error => {
       row.classList.remove('row-pending');
-      row.classList.add('row-ok');
+      row.classList.add('row-err');
       row.textContent = `❌ ${drink} · скасовано · ${error} ms`;
     })
     .finally(() => {
